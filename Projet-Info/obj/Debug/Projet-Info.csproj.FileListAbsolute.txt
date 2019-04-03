@@ -1,0 +1,7 @@
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\bin\Debug\Projet-Info.exe.config
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\bin\Debug\Projet-Info.exe
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\bin\Debug\Projet-Info.pdb
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\obj\Debug\Projet-Info.csprojResolveAssemblyReference.cache
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\obj\Debug\Projet-Info.exe
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\obj\Debug\Projet-Info.pdb
+C:\Users\clément\Documents\Visual Studio 2015\Projects\ProgS3\Projet-Info\Projet-Info\bin\Debug\Projet-Info.XML

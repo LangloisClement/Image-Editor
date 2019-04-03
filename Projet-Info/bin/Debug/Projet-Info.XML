@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projet-Info</name>
+    </assembly>
+    <members>
+        <member name="M:Projet_Info.Image.ConvertEndToInt(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            méthode de conversion du little endian aux entiers
+            </summary>
+            <param name="file">Tableau d'octet contenant les donnés</param>
+            <param name="index">Index de départ de la conversion</param>
+            <param name="taille">Nombre d'octet à convertir</param>
+            <returns>La valeur entière correspondante</returns>
+        </member>
+        <member name="M:Projet_Info.Image.ConvertByteToChar(System.Byte)">
+            <summary>
+            méthode de conversion d'octet à carractère
+            </summary>
+            <param name="b">octet à convertir</param>
+            <returns>le caractère correspondant</returns>
+        </member>
+        <member name="M:Projet_Info.Image.ConvertIntToByte(System.Int64)">
+            <summary>
+            méthode de conversion d'entier à little endian (4 octet)
+            </summary>
+            <param name="a">valeur entière à convertir</param>
+            <returns>tableau d'octet correspondant en little endian</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Cercle(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            permet de créer une image avec un cercle
+            </summary>
+            <param name="nom">nom du fichier créer</param>
+            <param name="haut">hauteur de l'image</param>
+            <param name="larg">largeur de l'image</param>
+            <param name="posX">position X du centre du cercle</param>
+            <param name="posY">position Y du centre du cercle</param>
+            <param name="radius">Rayon du cercle</param>
+            <returns>Image de taille hauteur largeur avec un cercle</returns>
+        </member>
+        <member name="M:Projet_Info.Image.RosaceBeta(System.Int32)">
+            <summary>
+            Première version de la rosace
+            </summary>
+            <param name="nbs">Nombre de rosace à superposé</param>
+            <returns>l'image avec les rosaces</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Rosace(System.Int32)">
+            <summary>
+            Version finale de la méthode pour créer des rosaces
+            </summary>
+            <param name="nbs">Nombre de rosace à superposé</param>
+            <returns>l'image avec les rosaces</returns>
+        </member>
+        <member name="M:Projet_Info.Image.YinYang">
+            <summary>
+            Permet de créer un yin-yang
+            </summary>
+            <returns>Une image avec un yin-yang</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Palette">
+            <summary>
+            Permet de créer une palette de couleur
+            </summary>
+            <returns>Une image de palette</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Julia(System.Int32)">
+            <summary>
+            Permet de créer une image repésentant une fractale de Julia
+            </summary>
+            <param name="ite_max">Nombre d'itération maximale, détermine la complxité de l'image final</param>
+            <returns>L'image représentant la fractale de Julia</returns>
+        </member>
+        <member name="M:Projet_Info.Image.#ctor(System.String)">
+            <summary>
+            Constructeur de la class Image à partir d'un fichier
+            </summary>
+            <param name="path">Chemin d'accès, relatif ou absolu, à l'image voulant être chargée</param>
+        </member>
+        <member name="M:Projet_Info.Image.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Construteur de la Classe Image à partir de valeur numérique
+            </summary>
+            <param name="Nom">Nom du nouveua ficher</param>
+            <param name="Haut">Hauteur de la nouvelle image</param>
+            <param name="Larg">Largeure de la nouvelle image</param>
+        </member>
+        <member name="M:Projet_Info.Image.ToByteArray">
+            <summary>
+            Transforme une instance de la classe Image en tableau d'octet
+            </summary>
+            <returns>Le tableau d'entier correspondant à l'image</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Gris">
+            <summary>
+            Transforme une image en nuance de gris
+            </summary>
+            <returns>La nouvelle image en nuance de gris</returns>
+        </member>
+        <member name="M:Projet_Info.Image.NoirBlanc">
+            <summary>
+            Transforme une image en noire et blanc
+            </summary>
+            <returns>La nouvelle image en noire et blanc</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Negatif">
+            <summary>
+            Transforme une image en son négatif 
+            </summary>
+            <returns>La nouvelle image en négatif</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinNord(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Nord d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Nord (au desus)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinNordEst(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Nord-Est d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Nord-Est (coin supérieur droit)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinEst(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Est d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Est (à droite)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinSudEst(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Sud-Est d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Sud-Est (coin inférieur droit)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinSud(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Sud d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Sud (en dessous)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinSudOuest(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Sud-Ouest d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Sud-Ouest(coin inférieure gauche)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinOuest(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Ouest d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Ouest (à gauche)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.VoisinNordOuest(Projet_Info.Pixel)">
+            <summary>
+            Renvoie le voisin Nord-Ouest d'un pixel
+            </summary>
+            <param name="current">Correspond au pixel de référence</param>
+            <returns>le voisin Nord-Ouest (coin supérieur gauche)</returns>
+        </member>
+        <member name="M:Projet_Info.Image.Convolution(System.Int32[0:,0:],System.Int32)">
+            <summary>
+            Applique une matrice de convolution à l'image
+            </summary>
+            <param name="convolution">Matrice de Convolution</param>
+            <param name="rapport">Rapport de division des résultat obtenue (par défaut à 9)</param>
+            <returns>L'image ayant subie une Convolution</returns>
+        </member>
+        <member name="M:Projet_Info.Pixel.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructeur de la classe Pixel
+            </summary>
+            <param name="x">position X du pixel</param>
+            <param name="y">position Y du pixel</param>
+            <param name="R">valeur rouge du pixel</param>
+            <param name="G">valeur verte du pixel</param>
+            <param name="B">valeur bleue du pixel</param>
+        </member>
+        <member name="M:Projet_Info.Program.Test(System.Byte[])">
+            <summary>
+            Fonction de test fournie par le professeur
+            </summary>
+            <param name="file">tableau d'octet contenant l'image</param>
+        </member>
+        <member name="M:Projet_Info.Program.Menu">
+            <summary>
+            Fonction Menu générale
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.NuanceGris">
+            <summary>
+            Fonction menu pour la méthode nuance de gris
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.NoirBlanc">
+            <summary>
+            Fonction menu pour la méthode noir et blanc
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Convolution">
+            <summary>
+            Fonction menu pour la méthode Convolution
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Cercle">
+            <summary>
+            Fonction menu pour la méthode Cercle
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Innovation">
+            <summary>
+            Fonction menu pour les innovations
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Negatif">
+            <summary>
+            Fonction menu pour le Négatif
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Rosace">
+            <summary>
+            Fonction menu pour les Rosaces
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.YinYang">
+            <summary>
+            Fonction menu pour le Yin-Yang
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Palette">
+            <summary>
+            Fonction menu pour la Palette de couleur
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Julia">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Projet_Info.Program.Main(System.String[])">
+            <summary>
+            Fonction Pricipale du programe
+            </summary>
+            <param name="args">détermine l'ordre d'execusion si plusieur fonctions main sont active</param>
+        </member>
+    </members>
+</doc>
